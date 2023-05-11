@@ -139,23 +139,7 @@ async def websocket_endpoint(websocket: WebSocket):
         #  SEND JSON TO mqtt broker txt, jpg_as_text2,tst
         client.publish(topic, json.dumps(a))
        
-        # get message from mqtt broker topic2 and show message print
-        # client.subscribe(topic2)
-        # stt = "s"
-        # def on_message(client, userdata, msg):
-        #     print(f"Received `{msg.payload.decode()}` from `{msg.topic}` topic")
-        #     #  read json from mqtt broker
-        #     data = json.loads(msg.payload.decode())
-        #     #  get stt from json
-        #     stt = data['stt']
-        #     #  send json to client
-        #     if stt =='1':
-        #         print(123)
-          
-        
-        # client.on_message = on_message
-       
-        # print(stt)
+ 
         
         await websocket.send_text(json.dumps(b))
         # send image to client
