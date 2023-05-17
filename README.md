@@ -1,6 +1,6 @@
 # License-plate-recognition-YOLO
 
-**Online detector:** https://license-plate-det-by-trung.herokuapp.com/
+
 
 ## How to run
 
